@@ -45,6 +45,14 @@
             android:layout_height="wrap_content"
             android:hint="사용할 닉네임 입력 (한글가능)"></EditText>
 
+    <Button
+        android:id="@+id/submmitBtn"
+        android:background="#FF9D9D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+<!--     textAllcaps 를 false로 해주면 소문자 가능, 기본적으로 대문자-->
+        android:text="sign up"></Button>
+
 
 
 </LinearLayout>
