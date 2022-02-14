@@ -5,18 +5,45 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/ID1"
+    <TextView
+        android:id="@+id/IDT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="ID입력"></EditText>
+        android:text="ID zone"></TextView>
+
     <EditText
-        android:id="@+id/PW1"
+        android:id="@+id/IDE1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"></EditText>
+
+    <TextView
+        android:id="@+id/PWT"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PW zone"></TextView>
+
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/PWE1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="PW입력"></EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="닉네임"></TextView>
+        <EditText
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="사용할 닉네임 입력 (한글가능)"></EditText>
 
 
 
