@@ -9,6 +9,7 @@
     android:layout_height="match_parent"
 
     tools:context=".MainActivity">
+// gravity 먹일 때, start / end를 left right 대신 쓰기, vertical_center이런식으로 둘을 조합할수도?
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -18,19 +19,26 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <ImageView
-        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+
         android:src="@drawable/btnwrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></ImageView>
+        </LinearLayout>
 
     //scaleType -> 이미지뷰랑 원본 이미지랑 크기 안 맞을 때 어떻게 쓸거니?
     //center_Crop 많이 쓰신다고..
 
     <TextView
-        android:layout_marginBottom="10sp"
-        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
         android:id="@+id/IDT"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -38,7 +46,7 @@
         android:text="ID zone"></TextView>
 
     <EditText
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="10dp"
 
         android:layout_marginLeft="20sp"
         android:id="@+id/IDE1"
@@ -47,39 +55,41 @@
         android:inputType="textEmailAddress"
         android:hint="E-mail"></EditText>
 
+        <TextView
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:id="@+id/PWT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PW zone"></TextView>
+
+
         <EditText
             android:id="@+id/PWE1"
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20sp"
-            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
             android:hint="PW입력"
             android:inputType="textPassword"></EditText>
 
-        <TextView
-        android:layout_marginBottom="10sp"
-
-        android:layout_marginLeft="20sp"
-        android:textSize="20sp"
-        android:id="@+id/PWT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="PW zone"></TextView>
 
 
         <TextView
-            android:layout_marginBottom="10sp"
+            android:layout_marginBottom="10dp"
 
-            android:layout_marginLeft="20sp"
+            android:layout_marginLeft="20dp"
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="닉네임"></TextView>
         <EditText
-            android:layout_marginBottom="10sp"
+            android:layout_marginBottom="10dp"
 
-            android:layout_marginLeft="20sp"
+            android:layout_marginLeft="20dp"
 
             android:imeOptions="actionSearch"
             android:singleLine="true"
@@ -89,17 +99,17 @@
     //약관의 경우, 먼저 안칠해놔야 효력 발생
 
     <TextView
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20sp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="성별"></TextView>
 
     <RadioGroup
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20sp"
+        android:layout_marginLeft="20dp"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -122,21 +132,21 @@
 
     </RadioGroup>
     <CheckBox
-        android:layout_marginBottom="10sp"
+        android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20sp"
+        android:layout_marginLeft="20dp"
         android:checked="true"
         android:text="약관 동의"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
     <CheckBox
-        android:layout_marginLeft="20sp"
+        android:layout_marginLeft="20dp"
         android:text="약관 동의2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
 
     <Button
-        android:layout_margin="20sp"
+        android:layout_margin="20dp"
         android:id="@+id/submmitBtn"
         android:background="#FF9D9D"
         android:layout_width="match_parent"
