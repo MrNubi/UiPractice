@@ -1,20 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    android:gravity="center"
+
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/btnwrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    //scaleType -> 이미지뷰랑 원본 이미지랑 크기 안 맞을 때 어떻게 쓸거니?
+    //center_Crop 많이 쓰신다고..
+
     <TextView
+        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="20sp"
         android:id="@+id/IDT"
+        android:textSize="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ID zone"></TextView>
 
     <EditText
+        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
         android:id="@+id/IDE1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +39,10 @@
         android:hint="E-mail"></EditText>
 
     <TextView
+        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
+        android:textSize="20sp"
         android:id="@+id/PWT"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,16 +50,27 @@
 
 
     <EditText
+        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
         android:inputType="textPassword"
         android:id="@+id/PWE1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="PW입력"></EditText>
         <TextView
+            android:layout_marginBottom="10sp"
+
+            android:layout_marginLeft="20sp"
+            android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="닉네임"></TextView>
         <EditText
+            android:layout_marginBottom="10sp"
+
+            android:layout_marginLeft="20sp"
+
             android:imeOptions="actionSearch"
             android:singleLine="true"
             android:layout_width="match_parent"
@@ -47,11 +79,17 @@
     //약관의 경우, 먼저 안칠해놔야 효력 발생
 
     <TextView
+        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="성별"></TextView>
 
     <RadioGroup
+        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -74,24 +112,32 @@
 
     </RadioGroup>
     <CheckBox
+        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
         android:checked="true"
         android:text="약관 동의"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
     <CheckBox
+        android:layout_marginLeft="20sp"
         android:text="약관 동의2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
 
     <Button
+        android:layout_margin="20sp"
         android:id="@+id/submmitBtn"
         android:background="#FF9D9D"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
         android:text="sign up"></Button>
+
+
     <!--     textAllcaps 를 false로 해주면 소문자 가능, 기본적으로 대문자-->
 
 
 
 </LinearLayout>
+</layout>
