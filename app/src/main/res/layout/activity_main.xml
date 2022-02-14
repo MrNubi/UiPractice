@@ -10,7 +10,7 @@
 
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-// gravity 먹일 때, start / end를 left right 대신 쓰기, vertical_center이런식으로 둘을 조합할수도?
+<!--// gravity 먹일 때, start / end를 left right 대신 쓰기, vertical_center이런식으로 둘을 조합할수도?-->
     <ScrollView
 
         android:layout_width="match_parent"
@@ -18,6 +18,7 @@
 
 
     <LinearLayout
+        android:paddingTop="20dp"
         android:layout_marginHorizontal="20dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -29,15 +30,15 @@
             android:layout_height="match_parent">
 
     <ImageView
-        android:layout_marginTop="20dp"
+
 
         android:src="@drawable/btnwrite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></ImageView>
         </LinearLayout>
 
-    //scaleType -> 이미지뷰랑 원본 이미지랑 크기 안 맞을 때 어떻게 쓸거니?
-    //center_Crop 많이 쓰신다고..
+<!--    //scaleType -> 이미지뷰랑 원본 이미지랑 크기 안 맞을 때 어떻게 쓸거니?-->
+<!--    //center_Crop 많이 쓰신다고..-->
 
     <TextView
         android:layout_marginBottom="10dp"
@@ -99,7 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="사용할 닉네임 입력 (한글가능)"></EditText>
-    //약관의 경우, 먼저 안칠해놔야 효력 발생
+<!--    //약관의 경우, 먼저 안칠해놔야 효력 발생-->
 
     <TextView
         android:layout_marginBottom="10dp"
@@ -116,7 +117,7 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        //오리엔테이션으로 줄 세우기 가능
+<!--        //오리엔테이션으로 줄 세우기 가능-->
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -132,10 +133,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="공개안함"></RadioButton>
-        // 뭔가 택일 할 수 있는 것들을 제시할 때 선택지를 줌
-        //  android:enabled="false" -> 이거 못누르게 막기 / 허락하기
-        // android:visibility="invisible" ->  보이지 않게, 내용물/공간은 유지
-        //android:visibility="gone" -> 보이지않게, +공간 사라지게 -> 이걸 더 자주 씀
+<!--        // 뭔가 택일 할 수 있는 것들을 제시할 때 선택지를 줌-->
+<!--        //  android:enabled="false" -> 이거 못누르게 막기 / 허락하기-->
+<!--        // android:visibility="invisible" ->  보이지 않게, 내용물/공간은 유지-->
+<!--        //android:visibility="gone" -> 보이지않게, +공간 사라지게 -> 이걸 더 자주 씀-->
 
     </RadioGroup>
     <CheckBox
@@ -156,8 +157,8 @@
             android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:layout_weight="1"></TextView>
-        //핸드폰 크기에 맞춰서 알아서 바닥으로 밀어냄
-        //weight응용 -> 밀어내기용 택스트뷰
+<!--        //핸드폰 크기에 맞춰서 알아서 바닥으로 밀어냄-->
+<!--        //weight응용 -> 밀어내기용 택스트뷰-->
 
         <LinearLayout
 
@@ -177,10 +178,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"></Button>
 
-            //weight: 비중
-            //일단 의존하는 값 하나를 0dp로 고정
-            //그리고 비율을 입력
-            //weight 응용 -> 리니어 레이아웃에서 바텀 고정
+<!--            //weight: 비중-->
+<!--            //일단 의존하는 값 하나를 0dp로 고정-->
+<!--            //그리고 비율을 입력-->
+<!--            //weight 응용 -> 리니어 레이아웃에서 바텀 고정-->
+<!--            //weight란, 쓰고 남은 공간을 나누는 비율-->
+<!--            //따라서 1을 먹이면, 남은 공간만큼 차지-->
 
 
             
