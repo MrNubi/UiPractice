@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
 
     tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <ImageView
         android:layout_gravity="center_horizontal"
@@ -38,7 +47,17 @@
         android:inputType="textEmailAddress"
         android:hint="E-mail"></EditText>
 
-    <TextView
+        <EditText
+            android:id="@+id/PWE1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="10sp"
+            android:hint="PW입력"
+            android:inputType="textPassword"></EditText>
+
+        <TextView
         android:layout_marginBottom="10sp"
 
         android:layout_marginLeft="20sp"
@@ -49,15 +68,6 @@
         android:text="PW zone"></TextView>
 
 
-    <EditText
-        android:layout_marginBottom="10sp"
-
-        android:layout_marginLeft="20sp"
-        android:inputType="textPassword"
-        android:id="@+id/PWE1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="PW입력"></EditText>
         <TextView
             android:layout_marginBottom="10sp"
 
@@ -133,6 +143,10 @@
         android:layout_height="wrap_content"
 
         android:text="sign up"></Button>
+
+    </LinearLayout>
+
+    </ScrollView>
 
 
     <!--     textAllcaps 를 false로 해주면 소문자 가능, 기본적으로 대문자-->
