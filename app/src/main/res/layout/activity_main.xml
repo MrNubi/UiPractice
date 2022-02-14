@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+
 
 <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:paddingHorizontal="20dp"
     android:layout_height="match_parent"
-
     tools:context=".MainActivity">
 // gravity 먹일 때, start / end를 left right 대신 쓰기, vertical_center이런식으로 둘을 조합할수도?
     <ScrollView
+
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
 
     <LinearLayout
+        android:layout_margin="10dp
+"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -38,7 +42,7 @@
 
     <TextView
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="20dp"
+
         android:id="@+id/IDT"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -48,7 +52,7 @@
     <EditText
         android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20sp"
+
         android:id="@+id/IDE1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -58,7 +62,7 @@
         <TextView
             android:layout_marginBottom="10dp"
 
-            android:layout_marginLeft="20dp"
+
             android:textSize="20sp"
             android:id="@+id/PWT"
             android:layout_width="wrap_content"
@@ -71,7 +75,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
+
             android:layout_marginBottom="10dp"
             android:hint="PW입력"
             android:inputType="textPassword"></EditText>
@@ -81,7 +85,7 @@
         <TextView
             android:layout_marginBottom="10dp"
 
-            android:layout_marginLeft="20dp"
+
             android:textSize="20sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -89,7 +93,7 @@
         <EditText
             android:layout_marginBottom="10dp"
 
-            android:layout_marginLeft="20dp"
+
 
             android:imeOptions="actionSearch"
             android:singleLine="true"
@@ -101,7 +105,7 @@
     <TextView
         android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20dp"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="성별"></TextView>
@@ -109,7 +113,7 @@
     <RadioGroup
         android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20dp"
+
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -134,13 +138,13 @@
     <CheckBox
         android:layout_marginBottom="10dp"
 
-        android:layout_marginLeft="20dp"
+
         android:checked="true"
         android:text="약관 동의"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
     <CheckBox
-        android:layout_marginLeft="20dp"
+
         android:text="약관 동의2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
@@ -164,4 +168,3 @@
 
 
 </LinearLayout>
-</layout>
