@@ -29,7 +29,7 @@
             android:layout_height="match_parent">
 
     <ImageView
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
 
         android:src="@drawable/btnwrite"
         android:layout_width="wrap_content"
@@ -152,16 +152,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"></CheckBox>
 
-    <Button
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"></TextView>
+        //핸드폰 크기에 맞춰서 알아서 바닥으로 밀어냄
+        //weight응용 -> 밀어내기용 택스트뷰
 
-        android:layout_margin="20dp"
-        android:id="@+id/submmitBtn"
-        android:backgroundTint="#F6BFBF"
+        <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="10dp"
+                android:text="Back"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:layout_margin="10dp"
+                android:text="Go"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Button>
 
-        android:text="sign up"></Button>
+            //weight: 비중
+            //일단 의존하는 값 하나를 0dp로 고정
+            //그리고 비율을 입력
+            //weight 응용 -> 리니어 레이아웃에서 바텀 고정
+
+
+            
+        </LinearLayout>
+
+<!--    <Button-->
+
+<!--        android:layout_margin="20dp"-->
+<!--        android:id="@+id/submmitBtn"-->
+<!--        android:backgroundTint="#F6BFBF"-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+
+<!--        android:text="sign up"></Button>-->
 
     </LinearLayout>
 
